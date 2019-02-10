@@ -1,6 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 
 namespace BerlinClock
@@ -22,14 +20,14 @@ namespace BerlinClock
             return outputString.ToString();
         }
 
-        private string YellowLamps(String time)
+        public string YellowLamps(String time)
         {
             if (time == null) throw new ArgumentNullException("time");
 
             return (getSeconds(time) % 2 == 0) ? "Y" : "O";
         }
 
-        private string FiveHoursLamps(String time)
+        public string FiveHoursLamps(String time)
         {
             if (time == null) throw new ArgumentNullException("time");
 
